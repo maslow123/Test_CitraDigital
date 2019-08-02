@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	sortWord("osama")
+	sortWord(strings.ToLower("Aman"))
 }
 
 func sortWord(word string) {

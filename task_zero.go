@@ -6,7 +6,7 @@ import(
 )
 
 func main() {
-	vowelAndConsonant("omama")
+	vowelAndConsonant(strings.ToLower("omama"))
 }
 
 func vowelAndConsonant(w string) {
@@ -16,7 +16,7 @@ func vowelAndConsonant(w string) {
 	// Pecahkan nilai string parameter menjadi array
 	arrWord := strings.Split(param,"")
 	
-	vowel := [5]string{"a","i","u","e","o"} // [ a i u e o ]
+	vowel := [5]string {"a","i","u","e","o"}
 	for _, value := range arrWord {
 		// fmt.Println(value)
 		for index,v := range vowel {
